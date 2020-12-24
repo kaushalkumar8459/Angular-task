@@ -1,0 +1,94 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "productName": "Party wear shirt",
+      "category_id": 5,
+      "descriptions": "Party wear shirt description is here ",
+      "price": 3000,
+      "is_available": true,
+      "productImg":"../../../assets/image/party wear shirt.jpg",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1
+    },
+    {
+      "id": 2,
+      "productName": "casual shirt",
+      "category_id": 5,
+      "descriptions": "casual shirt description is here",
+      "price": 300,
+      "is_available": true,
+      "productImg":"../../../assets/image/casual shirt.jpg",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1
+    },
+    {
+      "id": 3,
+      "productName": "jeans",
+      "category_id": 5,
+      "descriptions": "jeans description is here",
+      "price": 330,
+      "is_available": true,
+      "productImg":"../../../assets/image/jeans.jpg",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1
+    },
+    {
+      "id": 4,
+      "productName": "formal shirt",
+      "category_id": 5,
+      "descriptions": "formal shirt description is here",
+      "price": 420,
+      "is_available": true,
+      "productImg":"../../../assets/image/formal shirt.jpg",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1
+    },
+    {
+      "id": 5,
+      "productName": "bags",
+      "category_id": 5,
+      "descriptions": "bags description is here",
+      "price": 760,
+      "is_available": true,
+      "productImg":"../../../assets/image/1.jpg",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1
+    },
+    {
+      "id": 6,
+      "productName": "mobile",
+      "category_id": 5,
+      "descriptions": "mobile description is here",
+      "price": 760,
+      "is_available": true,
+      "productImg":"../../../assets/image/mobile.jpg",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1
+    }
+
+  ],
+  "categories": [
+    { "id": 1, "categoryName": "Electronic" },
+    { "id": 2, "categoryName": "Men" },
+    { "id": 1, "categoryName": "Women" },
+    { "id": 1, "categoryName": "Home & Furniture" },
+    { "id": 1, "categoryName": "Garments" },
+    { "id": 1, "categoryName": "Baby & Kids" }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

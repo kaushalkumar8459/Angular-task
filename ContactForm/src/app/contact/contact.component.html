@@ -1,0 +1,41 @@
+<div class="container jumbotron">
+  <div class="row">
+    <div class="col-sm-6 mx-auto">
+      <form #contactform="ngForm" (ngSubmit)="onSubmit(contactform)">
+        <h1>Contact Form</h1>
+        <!-- Enter name -->
+        <div class="form-group">
+          <label for="name">Enter Name</label>
+          <input type="text" name="name" id="name" class="form-control" required touched placeholder="Enter First Name"
+            #name="ngModel" [(ngModel)]="model.name">
+          <span class="err" *ngIf="name.invalid && name.touched">Enter Name</span>
+        </div>
+
+        <!-- Enter Email id -->
+        <div class="form-group">
+          <label for="email">Enter Email</label>
+          <input type="text" name="email" id="email" email required touched class="form-control"
+            [(ngModel)]="model.email" #email="ngModel" placeholder="Enter EmailID">
+          <span class="err" *ngIf="email.touched && !email.valid">Enter valid email</span>
+        </div>
+        <!-- Enter messages -->
+        <div class="form-group">
+          <label for="message">Enter Message</label>
+          <textarea class="form-control" id="message" rows="5" name="message" #message="ngModel"
+            [(ngModel)]="model.message" placeholder="Start writing Your Queries"></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="contactform" class="btn btn-primary" [disabled]="!contactform.valid">Submit</button>
+        </div>
+      </form><!--  -->
+      <!--form end-->
+
+    </div>
+    <!--row end-->
+  </div>
+  <!--container end-->
+</div>
+
+
+<!-- <button (click)="getdata()">click</button> -->
