@@ -9,6 +9,7 @@ import { UserService } from "./../user.service";
 export class ContactComponent implements OnInit {
   model = new User();
   public error: any;
+  contact_detail: [];
 
   constructor(private userservice: UserService) {}
 
@@ -20,7 +21,6 @@ export class ContactComponent implements OnInit {
       (result) => {
         alert("Thanks for your interest.We will revert you in 24 hours..!");
         console.log("User Registration Result: ", result);
-        console.log(data);
       },
       (error) => {
         console.log(error);
@@ -28,11 +28,13 @@ export class ContactComponent implements OnInit {
         this.error = error;
       }
     );
+    contactform.reset();
   }
 
   getdata() {
     this.userservice.getdata().subscribe((data) => {
-      console.log(data);
+      this.contact_detail = data as any;
+      console.log(this.contact_detail);
     });
   }
 }

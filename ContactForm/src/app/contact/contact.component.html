@@ -25,17 +25,16 @@
             [(ngModel)]="model.message" placeholder="Start writing Your Queries"></textarea>
         </div>
 
-        <div class="form-group">
+        <div class="form-group btn-group-justified">
           <button type="submit" id="contactform" class="btn btn-primary" [disabled]="!contactform.valid">Submit</button>
+          <input type="button" (click)="getdata()" class="btn btn-success" value="click">
         </div>
-      </form><!--  -->
+        <!--button end-->
+      </form>
       <!--form end-->
-
     </div>
-    <!--row end-->
+    <!--col end-->
   </div>
-  <!--container end-->
+  <!--row end-->
 </div>
-
-
-<!-- <button (click)="getdata()">click</button> -->
+<!--container end-->
